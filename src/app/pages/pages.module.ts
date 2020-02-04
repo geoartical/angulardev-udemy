@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 
-/*Rutas */
-import { PagesRoutingModule } from './pages-routing.module';
 /*Modulos */
 import { SharedModule } from '../shared/shared.module';
+
+/*Rutas */
+import { PagesRoutingModule } from './pages-routing.module';
+
 
 /*components */
 import { CommonModule } from '@angular/common';
