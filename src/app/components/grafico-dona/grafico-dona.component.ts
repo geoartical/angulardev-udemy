@@ -11,22 +11,16 @@ import { ChartType } from 'chart.js';
 export class GraficoDonaComponent implements OnInit {
 
   @Input() leyenda: string = 'leyenda';
-  @Input() datos: any = [];
 
 
-  public doughnutChartLabels: Label[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-  public doughnutChartData: MultiDataSet = [
-    [350, 450, 100],
-    [50, 150, 120],
-    [250, 130, 70],
-  ];
-  public doughnutChartType: ChartType = 'doughnut';
+  @Input() ChartLabels: Label[] = [];
+  @Input() ChartData: MultiDataSet = [];
+  @Input() ChartType: string = '';
 
   constructor() {
   }
 
   ngOnInit() {
-    this.doughnutChartLabels = this.datos;
   }
 
 }
