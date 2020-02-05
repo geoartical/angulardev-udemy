@@ -4,16 +4,16 @@ import { NgModule } from '@angular/core';
 /*Rutas*/
 import { AppRoutingModule } from './app-routing.module';
 
-/*Modulos*/
-import { PagesModule } from './pages/pages.module';
 
+
+/* Components */
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-import { FormsModule } from '@angular/forms';
 
-
-
+/*Modulos*/
+import { PagesModule } from './pages/pages.module';
+import { ServicesModule } from './services/services.module';
 
 
 @NgModule({
@@ -26,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     PagesModule,
     AppRoutingModule,
-    FormsModule
+    ServicesModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
